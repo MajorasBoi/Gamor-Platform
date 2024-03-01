@@ -1,0 +1,18 @@
+.btn button{
+    color: #66fcf1;
+    padding: 5px 25px;
+    background: transparent;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .btn button:hover{
+    background-color: #66fcf1;
+    color: #0b0c10;
+  }
+  
+  .highlighted button{
+    border: 1px solid #66fcf1;
+  }

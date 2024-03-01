@@ -1,0 +1,197 @@
+.main-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: 20px;
+    background-color: #1f2833;
+    min-height: 11cm;
+    max-height: 11cm;
+}
+
+.main-container .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33%;
+    max-width: 33%;
+}
+
+.main-container .left, .main-container .right {
+    margin: 2% 0;
+}
+
+.main-container .center{
+    justify-content: flex-end;
+    transition: all 0.3s ease 0s;
+}
+
+.main-container .center:hover{
+    transform: scale(1.01);
+}
+
+.main-container .right{
+    justify-content: normal;
+}
+
+.main-container .container .headers-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.main-container .container .mod1-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .container .mod1-container div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-container .container .header-section{
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    position: absolute;
+    margin-bottom: 1rem;
+    color: #c5c6c7;
+}
+
+.main-container .container .header-section p{
+    font-size: 1.2rem;
+    color: #c5c6c7;
+}
+
+.main-container .container .header-section .time-container{
+    background-color: #c5c6c7;
+    color: #1f2833;
+    padding: 0 3%;
+    border-radius: 50px;
+    margin-bottom: 2px;
+}
+
+.main-container .container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.main-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #c5c6c7;
+}
+
+.main-container p {
+    color: #c5c6c7;
+}
+
+.main-container h2 {
+    font-size: 2rem;
+    color: #c5c6c7;
+}
+
+.main-container .container label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.main-container .container label select{
+    width: 80%;
+    background-color: #0b0c10;
+    text-align: center;
+    border: 0;
+    border-radius: 50px;
+    margin: 5px;
+    color: #c5c6c7;
+    cursor: pointer;
+}
+
+.main-container .container label select option{
+    color: #c5c6c7;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0b0c10;
+    width: 80%;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #0b0c10;
+}
+
+.main-container .container label .search-container input{
+    background-color: transparent;
+    text-align: center;
+    border: 0;
+    border-radius: 50px;
+    margin: 5px;
+    color: #c5c6c7;
+}
+
+.main-container .container label .search-container .search-results{
+    flex-grow: 1;
+    padding: 0.5rem;
+    overflow-y: auto; 
+}
+
+.main-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.main-container li img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.main-container li h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.main-container li button {
+    font-size: 0.8rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.main-container li button:hover {
+    background-color: #444;
+}
+
+
+
