@@ -8,7 +8,7 @@ export const PromoComponent = () => {
                     23:45
                 </div>
             </div>
-            <img src="/dota.jpg" alt="Image about the new Dota 2 season" />
+            <img className="promo_pic" src="/dota.jpg" alt="Image about the new Dota 2 season" />
         </div>
     )
 }

@@ -74,7 +74,7 @@
     margin-bottom: 2px;
 }
 
-.main-container .container img{
+.promo_pic{
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -104,6 +104,7 @@
     align-items: center;
     width: 100%;
     margin-top: 5%;
+    max-height: 65%;
 }
 
 .main-container .container label select{
@@ -122,13 +123,15 @@
 }
 
 .search-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5%;
     background-color: #0b0c10;
     width: 80%;
     margin: 5px;
+    padding: 5px 0;
+    max-height: 100%;
     border-radius: 10px;
     background-color: #0b0c10;
 }
@@ -144,8 +147,12 @@
 
 .main-container .container label .search-container .search-results{
     flex-grow: 1;
+    width: 100%;
     padding: 0.5rem;
     overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
 }
 
 .main-container ul {

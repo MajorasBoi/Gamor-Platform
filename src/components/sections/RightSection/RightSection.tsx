@@ -1,22 +1,27 @@
+import { StreamerSection } from '../../StreamerSection/StreamerSection'
+import { useStreamers } from '../../../hooks/useStreamers'
+import { CustomSelect } from '../../CustomSelect/CustomSelect'
+
 export const RightSection = () => {
+    const { streamers } = useStreamers()
     return (
         <div className='container right'>
             <label htmlFor="selector">
                 <h4>Choose a platform</h4>
-                <select className="selector" id="selector">
-                    <option value="Party">Party</option>
-                    <option value="Matchs">Matchs</option>
-                    <option value="Streams">Streams</option>
-                </select>
+                <CustomSelect />
             </label>
             <label htmlFor="search-bar">
                 <h4>Search Game</h4>
                 <div className="search-container">
                     <input id="search-bar" type="text" placeholder="Call of Duty Warzone" />
                     <div className="search-results">
-                        {/* Add your search results list here */}
+                        {streamers?.map(streamer => {
+                            return (
+                                <StreamerSection streamer={streamer} index={streamer.id} key={streamer.id} />
+                            )
+                        })}
                     </div>
-                    <button>Search Now</button>
+                    <button className='search-button'>Search Now</button>
                 </div>
             </label>
         </div>

@@ -1,6 +1,10 @@
 import { Navbar } from '../components/Navbar/Navbar'
 
-export const PageLayout = ({ children }) => {
+interface PageLayoutProps {
+    children: React.ReactNode
+}
+
+export const PageLayout = ({ children }: PageLayoutProps) => {
     return (
         <div>
             <Navbar />

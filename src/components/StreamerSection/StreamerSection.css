@@ -1,0 +1,41 @@
+.StreamerSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.streamer_info{
+    width: 80%;
+    max-width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7%;
+}
+
+.index_indicator, .add_button{
+    width: 30px;
+    height: 30px;
+    background-color: #1f2833;
+    border-radius: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c5c6c7;
+    border-width: 0;
+    transition: background-color 0.2s ease-in-out
+}
+
+.add_button:hover{
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+}
+
+
