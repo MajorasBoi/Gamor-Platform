@@ -1,7 +1,8 @@
 import { useButtonClassName } from '../../hooks/useButtonClassName'
+import { type CustomButtonProps } from '../../types'
 import './CustomButton.css'
 
-export const CustomButton = ({ children, isRegisterButton = false }) => {
+export const CustomButton = ({ children, isRegisterButton = false }: CustomButtonProps) => {
     const className = useButtonClassName(isRegisterButton)
 
     return (

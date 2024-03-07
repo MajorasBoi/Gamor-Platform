@@ -1,6 +1,6 @@
 import './MainLayout.css'
-import { LeftSection } from './sections/LeftSection/LeftSection'
-import { RightSection } from './sections/RightSection/RightSection'
+import { LeftSection } from '../components/sections/LeftSection/LeftSection'
+import { RightSection } from '../components/sections/RightSection/RightSection'
 
 export const MainLayout = ({ children }) => {
     return (

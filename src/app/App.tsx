@@ -1,7 +1,7 @@
 import './App.css'
-import { MainLayout } from './components/MainLayout'
-import { PromoComponent } from './components/sections/PromoComponent/PromoComponent'
-import { PageLayout } from './layouts/PageLayout'
+import { MainLayout } from '../layouts/MainLayout'
+import { PromoComponent } from '../components/sections/PromoComponent/PromoComponent'
+import { PageLayout } from '../layouts/PageLayout'
 
 function App() {
   return (

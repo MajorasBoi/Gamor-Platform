@@ -1,4 +1,4 @@
-import { type Streamer } from '../components/StreamerSection/types'
+import { type Streamer } from '../types'
 
 export async function fetchStreamers(): Promise<Streamer[]> {
     return await fetch('http://localhost:5173/streamersData/streamersData.json')
