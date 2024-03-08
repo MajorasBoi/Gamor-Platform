@@ -28,6 +28,7 @@ export interface CustomSelectProps {
 export interface UseFilteredStreamersProps {
     streamers: Streamer[]
     selectedPlatform: Platform
+    query: string
 }
 
 export interface CustomButtonProps {

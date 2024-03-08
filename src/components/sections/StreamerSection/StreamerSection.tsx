@@ -1,4 +1,4 @@
-import { type StreamerSectionProps } from '../../types'
+import { type StreamerSectionProps } from '../../../types'
 import './StreamerSection.css'
 
 export const StreamerSection = ({ streamer, index = 0 }: StreamerSectionProps) => {

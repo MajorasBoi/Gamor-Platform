@@ -16,15 +16,19 @@
 
 .index_indicator, .add_button{
     width: 30px;
+    min-width: 30px;
     height: 30px;
     background-color: #1f2833;
     border-radius: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #c5c6c7;
     border-width: 0;
     transition: background-color 0.2s ease-in-out
+}
+
+.add_button{
+    cursor: pointer;
 }
 
 .add_button:hover{
