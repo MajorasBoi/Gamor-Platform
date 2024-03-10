@@ -1,14 +1,11 @@
 import { Navbar } from '../components/Navbar/Navbar'
-
-interface PageLayoutProps {
-    children: React.ReactNode
-}
+import { type PageLayoutProps } from '../types.d'
 
 export const PageLayout = ({ children }: PageLayoutProps) => {
     return (
         <div>
             <Navbar />
-            <main>
+            <main style={{ gap: '1cm' }}>
                 {children}
             </main>
         </div>

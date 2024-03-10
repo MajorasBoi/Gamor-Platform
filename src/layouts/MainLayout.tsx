@@ -8,18 +8,18 @@ import { type Streamer } from '../types'
 
 export const MainLayout = () => {
     const { streamers } = useStreamers()
-    const [promoStreamer, setPromoStreamer] = useState<Streamer | null>()
+    const [promoStreamer, setPromoStreamer] = useState<Streamer | undefined>()
+    console.log(promoStreamer)
 
     const handleOnClickPromoStreamer = (streamer: Streamer) => {
         const newStreamer = streamers.find((st) => st.username === streamer.username)
-        console.log(newStreamer)
         setPromoStreamer(newStreamer)
     }
 
     return (
         <div className='main-container'>
             <LeftSection />
-            {(promoStreamer != null) && <PromoComponent streamer={promoStreamer} />}
+            <PromoComponent streamer={promoStreamer} />
             <RightSection streamers={streamers} handleOnClickPromoStreamer={handleOnClickPromoStreamer} />
         </div>
     )

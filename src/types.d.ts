@@ -6,6 +6,19 @@ export enum Platform {
     Streams = 'Streams'
 }
 
+export enum Categories {
+    Strategy = 'Strategy',
+    Simultaion = 'Simulation',
+    Action = 'Action',
+    MMORPG = 'MMORPG',
+    Puzzle = 'Puzzle',
+    Horror = 'Horror',
+    Adventure = 'Adventure',
+    Sports = 'Sports',
+    FPS = 'FPS',
+    RPG = 'RPG'
+}
+
 export interface Streamer {
     id: number
     username: string
@@ -17,7 +30,7 @@ export interface Streamer {
 }
 
 export interface StreamerAsProp {
-    streamer: Streamer
+    streamer: Streamer | undefined
 }
 
 export interface StreamerSectionProps {
@@ -45,4 +58,13 @@ export interface CustomButtonProps {
 export interface RightSectionProps {
     streamers: Streamer[]
     handleOnClickPromoStreamer: Function
+}
+
+export interface CategoryProps {
+    category: Categories
+    index: number
+}
+
+export interface PageLayoutProps {
+    children: React.ReactNode
 }

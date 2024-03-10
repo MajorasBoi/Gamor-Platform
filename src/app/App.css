@@ -9,9 +9,15 @@
   color: #66fcf1;
 }
 
-html, body{
-  background: linear-gradient(#0b0c10, #1f2833);
+body{
   height: 100%;
+  background: linear-gradient(#0b0c10, #1f2833);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 

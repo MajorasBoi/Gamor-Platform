@@ -3,18 +3,55 @@
     flex-wrap: nowrap;
     justify-content: center;
     margin: 0 auto;
+    min-width: 90%;
     max-width: 90%;
     border-radius: 20px;
     background-color: #1f2833;
     min-height: 11cm;
-    max-height: 11cm;
+    color: #c5c6c7;
 }
 
 .main-container *{
     color: #c5c6c7;
 }
 
-.container{
+.categories-section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-box {
+    background-color: #0b0c10;
+    max-width: 24%;
+    min-width: 24%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.category-box div {
+    transition: all 0.3s ease 0s;
+}
+
+.category-box:hover {
+    opacity: 0.5;
+}
+
+.category-box:hover div {
+    transform: scale(1.05);
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -27,13 +64,18 @@
     margin: 2% 0;
 }
 
-.center{
+.center {
     justify-content: flex-end;
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
 }
 
-.center:hover{
-    transform: scale(1.01);
+.center:hover .promo_pic {
+    opacity: 0.3;
+}
+
+.center:hover .header-section {
+    transform: scale(1.05);
 }
 
 .right{
@@ -53,7 +95,8 @@
 
 .mod1-container div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 8px;
 }
 
 .header-section{
@@ -62,16 +105,18 @@
     align-items: center;
     position: absolute;
     margin-bottom: 1rem;
+    transition: all 0.3s ease 0s;
 }
 
 .header-section p{
     font-size: 1.2rem;
 }
 
-.time-container{
+.join-button{
     background-color: #c5c6c7;
     color: #1f2833;
-    padding: 0 3%;
+    font-weight: bold;
+    padding: 0 5%;
     border-radius: 50px;
     margin-bottom: 2px;
 }
@@ -79,10 +124,12 @@
 .promo_pic{
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover;
+    object-fit: cover ;
     width: 100%;
     height: 100%;
     border-radius: 3px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
 }
 
 .main-container h1 {
@@ -142,6 +189,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+    max-height: 5cm;
 }
 
 .search-results::-webkit-scrollbar{

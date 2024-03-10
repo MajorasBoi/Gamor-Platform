@@ -1,20 +1,17 @@
 import './App.css'
 import { MainLayout } from '../layouts/MainLayout'
-import { PromoComponent } from '../components/sections/PromoComponent/PromoComponent'
 import { PageLayout } from '../layouts/PageLayout'
+import { CategoriesLayout } from '../layouts/CategoriesLayout'
 
 function App() {
   return (
     <>
       <PageLayout>
-        <MainLayout>
-          <PromoComponent />
-        </MainLayout>
+        <MainLayout />
+        <CategoriesLayout />
       </PageLayout>
     </>
   )
 }
 
 export default App
-
-// <MainPanel />
