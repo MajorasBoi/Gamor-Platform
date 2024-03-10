@@ -13,11 +13,17 @@ export interface Streamer {
     avatar: string
     followers: number
     platform: Platform
+    game_picture: string
+}
+
+export interface StreamerAsProp {
+    streamer: Streamer
 }
 
 export interface StreamerSectionProps {
     streamer: Streamer
     index: number
+    handleOnClickPromoStreamer: Function
 }
 
 export interface CustomSelectProps {
@@ -34,4 +40,9 @@ export interface UseFilteredStreamersProps {
 export interface CustomButtonProps {
     children: ReactNode
     isRegisterButton?: boolean
+}
+
+export interface RightSectionProps {
+    streamers: Streamer[]
+    handleOnClickPromoStreamer: Function
 }

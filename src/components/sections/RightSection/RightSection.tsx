@@ -1,12 +1,10 @@
 import { StreamerSection } from '../StreamerSection/StreamerSection'
-import { useStreamers } from '../../../hooks/useStreamers'
 import { CustomSelect } from '../../CustomSelect/CustomSelect'
 import { type ChangeEvent, useState } from 'react'
-import { Platform } from '../../../types.d'
+import { Platform, type RightSectionProps } from '../../../types.d'
 import { useFilteredStreamers } from '../../../hooks/useFilteredStreamers'
 
-export const RightSection = () => {
-    const { streamers } = useStreamers()
+export const RightSection = ({ streamers, handleOnClickPromoStreamer }: RightSectionProps) => {
     const [selectedPlatform, setSelectedPlatform] = useState<Platform>(Object.values(Platform)[0])
     const [gameSearch, setGameSearch] = useState<string>('')
     const filteredStreamers = useFilteredStreamers({ streamers, selectedPlatform, query: gameSearch })
@@ -34,7 +32,7 @@ export const RightSection = () => {
                         {filteredStreamers.length > 0
                             ? filteredStreamers.map((streamer, index) => {
                                 return (
-                                    <StreamerSection streamer={streamer} index={index + 1} key={streamer.id} />
+                                    <StreamerSection streamer={streamer} index={index + 1} key={streamer.id} handleOnClickPromoStreamer={handleOnClickPromoStreamer} />
                                 )
                             })
                             : <div className='StreamerSection' style={{ color: '#797979' }}>No hay resultados</div>}

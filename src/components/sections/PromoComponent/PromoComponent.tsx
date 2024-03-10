@@ -1,14 +1,18 @@
-export const PromoComponent = () => {
+import { type StreamerAsProp } from '../../../types'
+
+export const PromoComponent = ({ streamer }: StreamerAsProp) => {
+    console.log(streamer.game_picture)
+
     return (
         <div className='container center'>
             <div className='header-section'>
-                <h2>Dota 2 New Season</h2>
-                <p>Join Live Stream</p>
+                <h2>{streamer.game}</h2>
+                <p>{streamer.username}</p>
                 <div className='time-container'>
-                    23:45
+                    JOIN
                 </div>
             </div>
-            <img className="promo_pic" src="/dota.jpg" alt="Image about the new Dota 2 season" />
+            <img className="promo_pic" src={streamer.game_picture} alt="Image about the new Dota 2 season" />
         </div>
     )
 }
