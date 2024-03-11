@@ -4,10 +4,10 @@ import { type ChangeEvent, useState } from 'react'
 import { Platform, type RightSectionProps } from '../../../types.d'
 import { useFilteredStreamers } from '../../../hooks/useFilteredStreamers'
 
-export const RightSection = ({ streamers, handleOnClickPromoStreamer }: RightSectionProps) => {
+export const RightSection = ({ streamers, currentCategory, handleOnClickPromoStreamer }: RightSectionProps) => {
     const [selectedPlatform, setSelectedPlatform] = useState<Platform>(Object.values(Platform)[0])
     const [gameSearch, setGameSearch] = useState<string>('')
-    const filteredStreamers = useFilteredStreamers({ streamers, selectedPlatform, query: gameSearch })
+    const filteredStreamers = useFilteredStreamers({ streamers, currentCategory, selectedPlatform, query: gameSearch })
 
     const handleSelectorChange = (e: ChangeEvent<HTMLSelectElement>) => {
         setSelectedPlatform(e.target.value as Platform)

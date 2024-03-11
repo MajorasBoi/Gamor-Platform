@@ -1,21 +1,22 @@
 import { useEffect, useState } from 'react'
-import { type UseFilteredStreamersProps, type Streamer } from '../types.d'
+import { type UseFilteredStreamersProps, type Streamer, Categories } from '../types.d'
 import { filterByPlatform } from '../services/filterByPlatform'
 import { filterByQuery } from '../services/filterByQuery'
+import { filterByCategory } from '../services/filterByCategory'
 
-export const useFilteredStreamers = ({ streamers, selectedPlatform, query }: UseFilteredStreamersProps) => {
+export const useFilteredStreamers = ({ streamers, currentCategory, selectedPlatform, query }: UseFilteredStreamersProps) => {
     const [filteredStreamers, setFilteredStreamers] = useState<Streamer[]>(streamers)
 
     useEffect(() => {
+        let newFilteredStreamers = filterByPlatform(selectedPlatform, streamers)
         if (query !== '') {
-            let newFilteredStreamers = filterByQuery(streamers, query)
-            newFilteredStreamers = filterByPlatform(selectedPlatform, newFilteredStreamers)
-            setFilteredStreamers(newFilteredStreamers)
-        } else {
-            const newFilteredStreamers = filterByPlatform(selectedPlatform, streamers)
-            setFilteredStreamers(newFilteredStreamers)
+            newFilteredStreamers = filterByQuery(newFilteredStreamers, query)
         }
-    }, [selectedPlatform, streamers, query])
+        if (currentCategory !== Categories.All) {
+            newFilteredStreamers = filterByCategory(newFilteredStreamers, currentCategory)
+        }
+        setFilteredStreamers(newFilteredStreamers)
+    }, [selectedPlatform, streamers, currentCategory, query])
 
     return filteredStreamers
 }

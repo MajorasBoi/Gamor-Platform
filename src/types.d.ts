@@ -7,6 +7,7 @@ export enum Platform {
 }
 
 export enum Categories {
+    All = 'All',
     Strategy = 'Strategy',
     Simultaion = 'Simulation',
     Action = 'Action',
@@ -27,6 +28,7 @@ export interface Streamer {
     followers: number
     platform: Platform
     game_picture: string
+    game_category: Categories
 }
 
 export interface StreamerAsProp {
@@ -46,6 +48,7 @@ export interface CustomSelectProps {
 
 export interface UseFilteredStreamersProps {
     streamers: Streamer[]
+    currentCategory: Categories
     selectedPlatform: Platform
     query: string
 }
@@ -57,14 +60,20 @@ export interface CustomButtonProps {
 
 export interface RightSectionProps {
     streamers: Streamer[]
+    currentCategory: Categories
     handleOnClickPromoStreamer: Function
 }
 
 export interface CategoryProps {
     category: Categories
-    index: number
+    index?: number
+    handleOnChangeCategory: Function
 }
 
 export interface PageLayoutProps {
     children: React.ReactNode
+}
+
+export interface CategoriesLayoutProps {
+    handleOnChangeCategory: Function
 }
