@@ -38,7 +38,6 @@ export interface StreamerAsProp {
 export interface StreamerSectionProps {
     streamer: Streamer
     index: number
-    handleOnClickPromoStreamer: Function
 }
 
 export interface CustomSelectProps {
@@ -58,16 +57,10 @@ export interface CustomButtonProps {
     isRegisterButton?: boolean
 }
 
-export interface RightSectionProps {
-    streamers: Streamer[]
-    currentCategory: Categories
-    handleOnClickPromoStreamer: Function
-}
-
 export interface CategoryProps {
     category: Categories
     index?: number
-    handleOnChangeCategory: Function
+    handleOnChangeCategory?: Function
 }
 
 export interface PageLayoutProps {
@@ -76,4 +69,22 @@ export interface PageLayoutProps {
 
 export interface CategoriesLayoutProps {
     handleOnChangeCategory: Function
+}
+
+export interface PromoStreamer {
+    promoStreamer?: Streamer
+    setPromoStreamer: (streamer: Streamer) => void
+}
+
+export interface PromoStreamerAsProp {
+    usePromoStreamer: PromoStreamer
+}
+
+export interface CurrentCategory {
+    currentCategory: Categories
+    setCurrentCategory: (category: Categories) => void
+}
+
+export interface CurrentCategoryAsProp {
+    useCurrentCategory: CurrentCategory
 }

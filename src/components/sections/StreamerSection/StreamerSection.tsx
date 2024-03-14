@@ -1,9 +1,12 @@
+import { usePromoStreamer } from '../../../hooks/usePromoStreamer'
 import { type StreamerSectionProps } from '../../../types'
 import './StreamerSection.css'
 
-export const StreamerSection = ({ streamer, index = 0, handleOnClickPromoStreamer }: StreamerSectionProps) => {
+export const StreamerSection = ({ streamer, index = 0 }: StreamerSectionProps) => {
+    const setPromoStreamer = usePromoStreamer((state) => state.setPromoStreamer)
+
     const onClickhandler = () => {
-        handleOnClickPromoStreamer(streamer)
+        setPromoStreamer(streamer)
     }
 
     return (

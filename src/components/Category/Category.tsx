@@ -1,8 +1,11 @@
 import { type CategoryProps } from '../../types.d'
+import { useCurrentCategory } from '../../hooks/useCurrentCategory'
 
-export const Category = ({ category, index, handleOnChangeCategory }: CategoryProps) => {
+export const Category = ({ category, index }: CategoryProps) => {
+    const setCurrentCategory = useCurrentCategory((state) => state.setCurrentCategory)
+
     const changeCategory = () => {
-        handleOnChangeCategory(category)
+        setCurrentCategory(category)
     }
 
     return (

@@ -1,7 +1,7 @@
-import { Categories, type CategoriesLayoutProps } from '../types.d'
+import { Categories } from '../types.d'
 import { Category } from '../components/Category/Category'
 
-export const CategoriesLayout = ({ handleOnChangeCategory }: CategoriesLayoutProps) => {
+export const CategoriesLayout = () => {
     return (
         <div className='main-container categories-section'>
             <h2>Categories</h2>
@@ -11,7 +11,7 @@ export const CategoriesLayout = ({ handleOnChangeCategory }: CategoriesLayoutPro
                         return null
                     }
                     return (
-                        <Category key={category} category={category} handleOnChangeCategory={handleOnChangeCategory} index={index} />
+                        <Category key={category} category={category} index={index} />
                     )
                 })}
             </article>

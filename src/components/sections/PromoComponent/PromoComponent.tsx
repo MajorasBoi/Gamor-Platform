@@ -1,19 +1,23 @@
-import { type StreamerAsProp } from '../../../types'
+import { usePromoStreamer } from '../../../hooks/usePromoStreamer'
 
-export const PromoComponent = ({ streamer }: StreamerAsProp) => {
+export const PromoComponent = () => {
+    const promoStreamer = usePromoStreamer((state) => state.promoStreamer)
+
     return (
-        <div className='container center'>
-            {streamer === undefined
+        <a className='container center' href='#'>
+            {promoStreamer === undefined
                 ? <img className="promo_pic" src="/dota.jpg" alt="Image about the new Dota 2 season" />
-                : <img className="promo_pic" src={streamer.game_picture} alt="Image about the streaming" />
+                : <img className="promo_pic" src={promoStreamer.game_picture} alt="Image about the streaming" />
             }
             <div className='header-section'>
-                <h2>{streamer === undefined ? 'Dota 2 International' : streamer.game}</h2>
-                <p>{streamer === undefined ? 'Join on April' : streamer.username}</p>
-                <div className='join-button'>
-                    JOIN
-                </div>
+                <h2>{promoStreamer === undefined ? 'Dota 2 International' : promoStreamer.game}</h2>
+                <p>{promoStreamer === undefined ? 'Join on April' : promoStreamer.username}</p>
+                {
+                    promoStreamer !== undefined && <div className='join-button'>
+                        JOIN
+                    </div>
+                }
             </div>
-        </div>
+        </a>
     )
 }

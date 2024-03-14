@@ -54,14 +54,11 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 33%;
+    gap: 5%;
     max-width: 33%;
-}
-
-.right {
-    margin: 2% 0;
 }
 
 .center {
@@ -79,7 +76,7 @@
 }
 
 .right{
-    justify-content: normal;
+    justify-content: center;
 }
 
 .headers-container{
@@ -93,10 +90,14 @@
     flex-direction: column;
 }
 
-.mod1-container div{
+.mod1-container div {
     display: flex;
     justify-content: center;
     gap: 8px;
+}
+
+.mod1-container span {
+    color: #66fcf1;
 }
 
 .header-section{
@@ -148,7 +149,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 5%;
     max-height: 65%;
 }
 
@@ -166,12 +166,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     gap: 5%;
     width: 80%;
     margin: 5px;
     padding: 5px 0;
-    min-height: 13.5rem;
-    border-radius: 10px;
+    min-height: 15rem;
+    max-height: 15rem;
+    border-radius: 20px;
     background-color: #0b0c10;
 }
 
@@ -191,7 +193,8 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-height: 5cm;
+    max-height: 4cm;
+    min-height: 4cm;
 }
 
 .search-results::-webkit-scrollbar{
