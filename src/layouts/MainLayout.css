@@ -1,4 +1,4 @@
-.main-container {
+.main-container, .login-container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -13,6 +13,12 @@
 
 .main-container *{
     color: #c5c6c7;
+}
+
+.login-container {
+    min-width: 35%;
+    max-width: 35%;
+    border-radius: 0 0 20px 20px;
 }
 
 .categories-section {
@@ -100,7 +106,7 @@
     color: #66fcf1;
 }
 
-.header-section{
+.header-section {
     display: flex;
     flex-direction:column-reverse;
     align-items: center;
@@ -109,11 +115,11 @@
     transition: all 0.3s ease 0s;
 }
 
-.header-section p{
+.header-section p {
     font-size: 1.2rem;
 }
 
-.join-button{
+.join-button {
     background-color: #c5c6c7;
     color: #1f2833;
     font-weight: bold;
@@ -122,7 +128,7 @@
     margin-bottom: 2px;
 }
 
-.promo_pic{
+.promo_pic {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover ;
@@ -177,7 +183,7 @@
     background-color: #0b0c10;
 }
 
-.search-container input{
+.search-container input {
     background-color: transparent;
     text-align: center;
     border: 0;
@@ -185,7 +191,7 @@
     margin: 5px;
 }
 
-.search-results{
+.search-results {
     flex-grow: 1;
     width: 95%;
     padding: 0 0.5rem;
@@ -197,13 +203,13 @@
     min-height: 4cm;
 }
 
-.search-results::-webkit-scrollbar{
+.search-results::-webkit-scrollbar {
     background-color: #1f2833;
     width: 5px;
     border-radius: 16px;
 }
 
-.search-results::-webkit-scrollbar-thumb{
+.search-results::-webkit-scrollbar-thumb {
     background-color: #45a29e;
     border-radius: 16px;
 }
