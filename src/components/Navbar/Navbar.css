@@ -16,6 +16,10 @@ nav{
   padding: 10px;
 }
 
+.header nav {
+  min-width: 40%;
+}
+
 .nav-links{
   list-style: none;
 }
@@ -43,7 +47,9 @@ nav{
 
 .navbar-right{
   display: flex;
+  justify-content: end;
   gap: 7px;
+  min-width: 40%;
 }
 
 

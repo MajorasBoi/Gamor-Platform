@@ -36,6 +36,7 @@ module.exports = {
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/no-confusing-void-expression": "off",
-        "@typescript-eslint/ban-types": "off"
+        "@typescript-eslint/ban-types": "off",
+        "@typescript-eslint/no-base-to-string": "off"
     }
 }

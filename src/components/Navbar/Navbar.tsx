@@ -2,6 +2,8 @@ import { CustomButton } from '../CustomButton/CustomButton'
 import './Navbar.css'
 
 export const Navbar = () => {
+    const currentUser = sessionStorage.getItem('username')
+
     return (
         <header className="header">
             <nav>
@@ -15,10 +17,13 @@ export const Navbar = () => {
             <div className="navbar-center">
                 <a href="/" className="navbar-title">⚛Gamor</a>
             </div>
-            <div className="navbar-right">
-                <CustomButton>Sign In</CustomButton>
-                <CustomButton isRegisterButton={true}>Register</CustomButton>
-            </div>
+            {currentUser !== ''
+                ? <h2 className='navbar-right'>{currentUser}</h2>
+                : <div className="navbar-right">
+                    <CustomButton>Sign In</CustomButton>
+                    <CustomButton isRegisterButton={true}>Register</CustomButton>
+                </div>
+            }
         </header>
     )
 }

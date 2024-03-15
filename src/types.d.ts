@@ -88,3 +88,12 @@ export interface CurrentCategory {
 export interface CurrentCategoryAsProp {
     useCurrentCategory: CurrentCategory
 }
+
+export interface Users {
+    Users: User[]
+}
+
+export interface User {
+    username: string
+    password: string
+}

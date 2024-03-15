@@ -8,24 +8,24 @@ export const Login = () => {
                 <h1>Log in to <span>Gamor</span></h1>
             </header>
             <main>
-                <div>
-                    <Form method="post" id="login-form">
+                <Form method="post" id="login-form">
+                    <div className='cl-inputs'>
                         <div className='input-container'>
                             <label htmlFor="username">
                                 Username
-                                <input id="username" type="text" />
+                                <input name="username" type="text" />
                             </label>
                         </div>
                         <div className='input-container'>
                             <label htmlFor="password">
                                 Password
-                                <input id="password" type="password" />
+                                <input name="password" type="password" />
                             </label>
+                            <a href="#">Trouble logging in?</a>
                         </div>
-                    </Form>
-                    <a href="#">Trouble logging in?</a>
-                </div>
-                <button className='search-button' style={{ border: '1px solid #66fcf1', width: '100%' }}>Log in</button>
+                    </div>
+                    <button className='search-button' type='submit' style={{ border: '1px solid #66fcf1', width: '100%' }}>Log in</button>
+                </Form>
             </main>
         </div>
     )

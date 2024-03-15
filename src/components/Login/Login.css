@@ -29,11 +29,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 1cm;
-}
-
-.login-section main div {
-    width: 100%;
 }
 
 .login-section a {
@@ -46,6 +41,13 @@
 }
 
 #login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1cm;
+}
+
+.cl-inputs {
     display: flex;
     flex-direction: column;
     gap: 0.5cm;
