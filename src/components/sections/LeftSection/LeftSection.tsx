@@ -12,7 +12,7 @@ export const LeftSection = () => {
             </div>
             <div className='mod1-container'>
                 <p style={{ paddingBottom: '1rem' }}><span>Gamor</span> now has a <span>stream party</span> platform</p>
-                {currentUser === '' &&
+                {currentUser == null &&
                     <div>
                         <CustomButton>Sign In</CustomButton>
                         <CustomButton isRegisterButton={true}>Register</CustomButton>

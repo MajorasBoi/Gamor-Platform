@@ -17,7 +17,7 @@ export const Navbar = () => {
             <div className="navbar-center">
                 <a href="/" className="navbar-title">⚛Gamor</a>
             </div>
-            {currentUser !== ''
+            {currentUser !== null
                 ? <h2 className='navbar-right'>{currentUser}</h2>
                 : <div className="navbar-right">
                     <CustomButton>Sign In</CustomButton>

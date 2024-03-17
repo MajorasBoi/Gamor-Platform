@@ -9,8 +9,6 @@ import Index from './routes/Index/Index'
 import { Login, loginAction } from './routes/Login/Login'
 import Register from './routes/Register/Register'
 
-sessionStorage.setItem('username', '')
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
