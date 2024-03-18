@@ -1,9 +1,9 @@
-import { usePromoStreamer } from '../../../hooks/usePromoStreamer'
+import { promoStreamerStore } from '../../../stores/promoStreamerStore'
 import { type StreamerSectionProps } from '../../../types'
 import './StreamerSection.css'
 
 export const StreamerSection = ({ streamer, index = 0 }: StreamerSectionProps) => {
-    const setPromoStreamer = usePromoStreamer((state) => state.setPromoStreamer)
+    const setPromoStreamer = promoStreamerStore((state) => state.setPromoStreamer)
 
     const onClickhandler = () => {
         setPromoStreamer(streamer)

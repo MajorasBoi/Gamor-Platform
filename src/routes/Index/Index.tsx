@@ -7,6 +7,10 @@ import { PromoComponent } from '../../components/sections/PromoComponent/PromoCo
 import { RightSection } from '../../components/sections/RightSection/RightSection'
 
 export default function Index() {
+    if (sessionStorage.getItem('theme') === 'dark') {
+        document.body.classList.value = 'dark'
+    }
+
     return (
         <>
             <PageLayout>

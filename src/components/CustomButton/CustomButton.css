@@ -11,8 +11,17 @@
   .btn button:hover, .search-button:hover{
     background-color: #66fcf1;
     color: #0b0c10;
+
+    body.dark & {
+      background-color: #1f2833;
+      color: #45a29e;
+    }
   }
   
   .highlighted button{
     border: 1px solid #66fcf1;
+
+    body.dark & {
+      border-color: #1f2833;
+    }
   }

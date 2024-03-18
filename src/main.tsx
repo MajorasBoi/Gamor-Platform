@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import {
   Route,
   RouterProvider,
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
 const rootElement = document.getElementById('root')
 
 if (rootElement != null) {
-  ReactDOM.createRoot(rootElement).render(
+  createRoot(rootElement).render(
     <RouterProvider router={router} />
   )
 } else {

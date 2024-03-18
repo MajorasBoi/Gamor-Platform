@@ -12,6 +12,7 @@ export const Navbar = () => {
                     <li><a href="#">Streams</a></li>
                     <li><a href="#">Party</a></li>
                     <li><a href="#">Premium</a></li>
+
                 </ul>
             </nav>
             <div className="navbar-center">

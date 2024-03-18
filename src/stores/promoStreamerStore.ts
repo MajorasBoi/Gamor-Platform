@@ -1,7 +1,7 @@
 import { create } from 'zustand'
-import { type Streamer, type PromoStreamer } from '../types.d'
+import { type Streamer, type PromoStreamer } from '../types'
 
-export const usePromoStreamer = create<PromoStreamer>()((set) => ({
+export const promoStreamerStore = create<PromoStreamer>()((set) => ({
     promoStreamer: undefined,
     setPromoStreamer: (streamer: Streamer) => set({ promoStreamer: streamer })
 }))

@@ -3,7 +3,7 @@ import { CustomSelect } from '../../CustomSelect/CustomSelect'
 import { type ChangeEvent, useState } from 'react'
 import { Platform } from '../../../types.d'
 import { useFilteredStreamers } from '../../../hooks/useFilteredStreamers'
-import { useCurrentCategory } from '../../../hooks/useCurrentCategory'
+import { currentCategoryStore } from '../../../stores/currentCategoryStore'
 import { useStreamers } from '../../../hooks/useStreamers'
 
 export const RightSection = () => {
@@ -11,7 +11,7 @@ export const RightSection = () => {
     const [gameSearch, setGameSearch] = useState<string>('')
     const { streamers } = useStreamers()
 
-    const currentCategory = useCurrentCategory((state) => state.currentCategory)
+    const currentCategory = currentCategoryStore((state) => state.currentCategory)
 
     const filteredStreamers = useFilteredStreamers({ streamers, currentCategory, selectedPlatform, query: gameSearch })
 

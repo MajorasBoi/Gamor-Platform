@@ -1,7 +1,7 @@
-import { usePromoStreamer } from '../../../hooks/usePromoStreamer'
+import { promoStreamerStore } from '../../../stores/promoStreamerStore'
 
 export const PromoComponent = () => {
-    const promoStreamer = usePromoStreamer((state) => state.promoStreamer)
+    const promoStreamer = promoStreamerStore((state) => state.promoStreamer)
 
     return (
         <a className='container center' href='#'>

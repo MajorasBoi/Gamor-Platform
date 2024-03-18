@@ -7,7 +7,7 @@ export const LeftSection = () => {
         <div className='container left'>
             <div className='headers-container'>
                 <h1>Join the</h1>
-                <h1 style={{ color: '#66fcf1' }}>Stream Party</h1>
+                <h1 className='emphasized'>Stream Party</h1>
                 <h1>on Gamor!</h1>
             </div>
             <div className='mod1-container'>

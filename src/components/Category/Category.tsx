@@ -1,8 +1,8 @@
 import { type CategoryProps } from '../../types.d'
-import { useCurrentCategory } from '../../hooks/useCurrentCategory'
+import { currentCategoryStore } from '../../stores/currentCategoryStore'
 
 export const Category = ({ category, index }: CategoryProps) => {
-    const setCurrentCategory = useCurrentCategory((state) => state.setCurrentCategory)
+    const setCurrentCategory = currentCategoryStore((state) => state.setCurrentCategory)
 
     const changeCategory = () => {
         setCurrentCategory(category)

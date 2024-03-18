@@ -24,7 +24,11 @@
     justify-content: center;
     align-items: center;
     border-width: 0;
-    transition: background-color 0.2s ease-in-out
+    transition: background-color 0.2s ease-in-out;
+
+    body.dark & {
+        background-color: #c5c6c7;
+    }
 }
 
 .add_button{
@@ -34,6 +38,11 @@
 .add_button:hover{
     background-color: #66fcf1;
     color: #0b0c10;
+
+    body.dark & {
+        background-color: #1f2833;
+        color: #c5c6c7;
+    }
 }
 
 .avatar{
