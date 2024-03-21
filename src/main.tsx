@@ -6,14 +6,14 @@ import {
   createRoutesFromElements
 } from 'react-router-dom'
 import Index from './routes/Index/Index'
-import { Login, loginAction } from './routes/Login/Login'
+import { Login } from './routes/Login/Login'
 import Register from './routes/Register/Register'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path='/' element={<Index />} />
-      <Route path='/login' element={<Login />} action={loginAction} />
+      <Route path='/login' element={<Login />} />
       <Route path='/register' element={<Register />} />
     </Route>
   )

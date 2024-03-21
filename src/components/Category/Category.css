@@ -1,0 +1,57 @@
+.category-box {
+    background-color: #0b0c10;
+    max-width: 24%;
+    min-width: 24%;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+    body.dark & {
+        background-color: #45a29e;
+    }
+}
+
+.category-box:hover {
+    opacity: 0.5;
+}
+
+.selected {
+    background-color: #45a29e;
+    p {
+        color: #1f2833;
+    }
+
+    body.dark & {
+        background-color: #1f2833;
+        p {
+            color: #c5c6c7;
+        }
+    }
+}
+
+.category-box div {
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.category-box:hover div {
+    transform: scale(1.05);
+}
+
+#SVG-play path{
+    stroke: #c5c6c7;
+
+    body.dark & {
+        stroke: #1f2833;
+    }
+}
+
+#SVG-pause path{
+    stroke: #1f2833;
+
+    body.dark & {
+        stroke: #c5c6c7;
+    }
+}

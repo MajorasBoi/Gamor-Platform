@@ -1,14 +1,16 @@
-import { Form } from 'react-router-dom'
 import './Login.css'
+import { loginVerification } from '../../services/loginVerification'
 
 export const Login = () => {
+    const { error, loginAction } = loginVerification()
+
     return (
         <div className='login-section'>
             <header className='login-header'>
                 <h1>Log in to <span>Gamor</span></h1>
             </header>
             <main>
-                <Form method="post" id="login-form">
+                <form id="login-form" onSubmit={loginAction}>
                     <div className='cl-inputs'>
                         <div className='input-container'>
                             <label htmlFor="username">
@@ -24,9 +26,13 @@ export const Login = () => {
                             <a href="#">Trouble logging in?</a>
                         </div>
                     </div>
-                    <button className='search-button' type='submit' style={{ border: '1px solid #66fcf1', width: '100%' }}>Log in</button>
-                </Form>
+                    {error !== null
+                        ? <p style={{ color: 'red' }}>{error}</p>
+                        : <></>}
+                    <button className='login-button' type='submit' style={{ width: '100%' }}>Log in</button>
+                </form>
             </main>
         </div>
+
     )
 }

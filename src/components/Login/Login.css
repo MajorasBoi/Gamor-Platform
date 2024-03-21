@@ -16,12 +16,12 @@
     flex-direction: row;
 }
 
-.login-section h1, .login-section span {
+.login-header h1, .login-header span {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-.login-section span {
+.login-header span {
     color: #66fcf1;
 }
 
@@ -29,15 +29,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-}
-
-.login-section a {
-    font-size: 0.75rem;
-    transition: all 0.3s ease 0s;
-}
-
-.login-section a:hover {
-    color: #45a29e;
 }
 
 #login-form {
@@ -69,4 +60,37 @@
         color: #c5c6c7;
     }
 }
+
+#login-form a {
+    font-size: 0.75rem;
+    width:fit-content;
+    transition: all 0.3s ease 0s;
+}
+
+#login-form a:hover {
+    color: #45a29e;
+}
+
+.login-button {
+    padding: 5px 25px;
+    background: transparent;
+    border: 1px solid #66fcf1;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  
+    body.dark & {
+      border-color: #1f2833;
+    }
+  }
+  
+  .login-button:hover {
+    background-color: #66fcf1;
+    color: #0b0c10;
+  
+    body.dark & {
+      background-color: #1f2833;
+      color: #66fcf1;
+    }
+  }
 

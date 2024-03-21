@@ -1,3 +1,4 @@
+import './PromoComponent.css'
 import { promoStreamerStore } from '../../../stores/promoStreamerStore'
 
 export const PromoComponent = () => {

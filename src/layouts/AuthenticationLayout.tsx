@@ -1,3 +1,4 @@
+import './AuthenticationLayout.css'
 import { MainLayout } from './MainLayout'
 import { Login } from '../components/Login/Login'
 import { Footer } from '../components/Footer/Footer'

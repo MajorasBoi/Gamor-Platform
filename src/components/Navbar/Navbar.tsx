@@ -15,7 +15,7 @@ export const Navbar = () => {
 
                 </ul>
             </nav>
-            <div className="navbar-center">
+            <div>
                 <a href="/" className="navbar-title">⚛Gamor</a>
             </div>
             {currentUser !== null

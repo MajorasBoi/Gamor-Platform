@@ -1,3 +1,4 @@
+import './CategoriesLayout.css'
 import { Categories } from '../types.d'
 import { Category } from '../components/Category/Category'
 

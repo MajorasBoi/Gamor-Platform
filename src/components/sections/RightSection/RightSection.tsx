@@ -1,3 +1,4 @@
+import './RightSection.css'
 import { StreamerSection } from '../StreamerSection/StreamerSection'
 import { CustomSelect } from '../../CustomSelect/CustomSelect'
 import { type ChangeEvent, useState } from 'react'
@@ -41,9 +42,9 @@ export const RightSection = () => {
                                     <StreamerSection streamer={streamer} index={index + 1} key={streamer.id} />
                                 )
                             })
-                            : <div className='StreamerSection' style={{ color: '#797979' }}>No hay resultados</div>}
+                            : <div style={{ color: '#797979' }}>No hay resultados</div>}
                     </div>
-                    <button className='search-button' style={{ border: '1px solid #66fcf1', width: '95%' }} onClick={handleSearch}>Search Now</button>
+                    <button className='search-button' style={{ border: '1px solid', width: '95%' }} onClick={handleSearch}>Search Now</button>
                 </div>
             </label>
         </div>

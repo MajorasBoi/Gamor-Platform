@@ -37,6 +37,7 @@ module.exports = {
         "@typescript-eslint/indent": "off",
         "@typescript-eslint/no-confusing-void-expression": "off",
         "@typescript-eslint/ban-types": "off",
-        "@typescript-eslint/no-base-to-string": "off"
+        "@typescript-eslint/no-base-to-string": "off",
+        "@typescript-eslint/no-misused-promises": "off"
     }
 }

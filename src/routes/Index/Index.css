@@ -46,4 +46,31 @@ main {
   justify-content: space-evenly;
 }
 
+a{
+  text-decoration: none;
+}
+
+.main-container, .login-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+  min-width: 90%;
+  max-width: 90%;
+  border-radius: 20px;
+  background-color: #1f2833;
+  min-height: 11cm;
+  color: #c5c6c7;
+  transition:  0.3s ease all;
+
+  body.dark & {
+      background-color: #c5c6c7;
+      color: #1f2833;
+  }
+}
+
+.main-container *{
+  color: #c5c6c7;
+}
+
 

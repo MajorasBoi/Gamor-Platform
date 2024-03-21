@@ -1,0 +1,28 @@
+.headers-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.emphasized {
+    color: #66fcf1;
+
+    body.dark & {
+        color: #45a29e; 
+    }
+}
+
+.mod1-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.mod1-container div {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.mod1-container span {
+    color: #66fcf1;
+}

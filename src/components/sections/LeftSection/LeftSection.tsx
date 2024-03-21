@@ -1,10 +1,11 @@
+import './LeftSection.css'
 import { CustomButton } from '../../CustomButton/CustomButton'
 
 export const LeftSection = () => {
     const currentUser = sessionStorage.getItem('username')
 
     return (
-        <div className='container left'>
+        <div className='container'>
             <div className='headers-container'>
                 <h1>Join the</h1>
                 <h1 className='emphasized'>Stream Party</h1>

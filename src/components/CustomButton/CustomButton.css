@@ -1,27 +1,27 @@
 .btn button, .search-button{
-    color: #66fcf1;
-    padding: 5px 25px;
-    background: transparent;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .btn button:hover, .search-button:hover{
-    background-color: #66fcf1;
-    color: #0b0c10;
+  color: #66fcf1;
+  padding: 5px 25px;
+  background: transparent;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
 
-    body.dark & {
-      background-color: #1f2833;
-      color: #45a29e;
-    }
-  }
-  
-  .highlighted button{
-    border: 1px solid #66fcf1;
+.btn button:hover, .search-button:hover{
+  background-color: #66fcf1;
+  color: #0b0c10;
 
-    body.dark & {
-      border-color: #1f2833;
-    }
+  body.dark & {
+    background-color: #1f2833;
+    color: #45a29e;
   }
+}
+
+.highlighted button{
+  border: 1px solid #66fcf1;
+
+  body.dark & {
+    border-color: #1f2833;
+  }
+}

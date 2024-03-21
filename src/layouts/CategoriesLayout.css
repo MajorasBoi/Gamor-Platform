@@ -1,0 +1,17 @@
+.categories-section {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+
+    body.dark & {
+        background-color: transparent;
+    }
+}
+
+.categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}

@@ -31,6 +31,12 @@
     }
 }
 
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 1000px;
+}
+
 .add_button{
     cursor: pointer;
 }
@@ -43,12 +49,6 @@
         background-color: #1f2833;
         color: #c5c6c7;
     }
-}
-
-.avatar{
-    width: 30px;
-    height: 30px;
-    border-radius: 1000px;
 }
 
 

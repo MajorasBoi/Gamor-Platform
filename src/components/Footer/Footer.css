@@ -10,7 +10,7 @@
     border-radius: 32px;
     opacity: .6;
     backdrop-filter: blur(8px);
-    transition: 0.3s ease all;
+    max-height: 36px;
     p {
         display:none
     }
