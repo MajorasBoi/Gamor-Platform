@@ -26,6 +26,6 @@
 
 .footer:hover {
     p {
-        display: contents;
+        display: block;
     }
 }

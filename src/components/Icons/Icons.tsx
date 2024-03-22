@@ -1,3 +1,5 @@
+import { type MouseEventHandler } from 'react'
+
 export const PlayIcon = () => {
     return (
         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
@@ -14,6 +16,23 @@ export const PauseIcon = () => {
             <g id="SVGRepo_bgCarrier" strokeWidth="0" />
             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
             <g id="SVG-pause"> <path d="M8 5V19M16 5V19" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /> </g>
+        </svg>
+    )
+}
+
+export const HamburgerIcon = () => {
+    const handleClick = (e) => {
+        const links = document.querySelector('.nav-links')
+        links?.classList.toggle('show')
+        e.target.classList.toggle('active')
+        console.log(e.target)
+    }
+
+    return (
+        <svg className="hamb-icon" onClick={handleClick} width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 7L4 7" stroke="#66fcf1" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M20 12L4 12" stroke="#66fcf1" strokeWidth="1.5" strokeLinecap="round" />
+            <path d="M20 17L4 17" stroke="#66fcf1" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
     )
 }

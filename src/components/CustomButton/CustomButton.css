@@ -25,3 +25,12 @@
     border-color: #1f2833;
   }
 }
+
+/* mobile */
+
+@media screen and (max-width: 850px){
+  .btn button, .search-button {
+    font-size: 2.5vw;
+    padding: 0.1vw 0.8vw;
+  }
+}

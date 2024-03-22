@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
   padding: 10px;
 }
 
@@ -20,10 +19,6 @@ nav{
   gap: 15px;
 }
 
-.nav-links li{
-  display: inline-block;
-}
-
 .nav-links li:hover{
   transform: scale(1.1);
 }
@@ -37,6 +32,10 @@ nav{
   color: #c5c6c7;
 }
 
+.hamb-icon {
+  display: none;
+}
+
 .navbar-title{
   font-size: 40px;
 }
@@ -48,5 +47,65 @@ nav{
   min-width: 40%;
 }
 
+/* Mobile */
+
+@media screen and (max-width: 850px){
+  .header {
+    display: flex;
+    flex-direction: column-reverse;
+    min-height: 8vw;
+  }
+
+  nav{
+    padding: 0;
+    margin: 0;
+    min-width: auto;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100vh;
+    height: auto;
+    padding: 2vw 0 2vw 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .nav-links li a {
+    font-size: 2.5vw;
+  }
+
+  .hamb-icon {
+    height: 6vw;
+    display: block;
+    right: 30px;
+    top: 7px;
+    cursor: pointer;
+  }
+
+  .active {
+    transform: rotate(90deg);
+  }
+
+  .title-hamb {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-title {
+    font-size: 4.7vw;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+}
 
 

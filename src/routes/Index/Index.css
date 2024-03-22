@@ -73,4 +73,16 @@ a{
   color: #c5c6c7;
 }
 
+/* Mobile */
+
+@media screen and (max-width: 850px){
+  .main-container {
+    min-width: 70%;
+    max-width: 70%;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0;
+  }
+}
+
 

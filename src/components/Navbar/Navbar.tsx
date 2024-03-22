@@ -1,4 +1,5 @@
 import { CustomButton } from '../CustomButton/CustomButton'
+import { HamburgerIcon } from '../Icons/Icons'
 import './Navbar.css'
 
 export const Navbar = () => {
@@ -12,11 +13,11 @@ export const Navbar = () => {
                     <li><a href="#">Streams</a></li>
                     <li><a href="#">Party</a></li>
                     <li><a href="#">Premium</a></li>
-
                 </ul>
             </nav>
-            <div>
+            <div className='title-hamb'>
                 <a href="/" className="navbar-title">⚛Gamor</a>
+                <HamburgerIcon />
             </div>
             {currentUser !== null
                 ? <h2 className='navbar-right'>{currentUser}</h2>

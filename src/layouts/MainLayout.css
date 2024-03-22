@@ -49,5 +49,19 @@
     margin-bottom: 0.5rem;
 }
 
+/* Mobile */
+
+@media screen and (max-width: 850px){
+    .container {
+        width: 100%;
+        min-height: 30vw;
+        max-width: none;
+    }
+    
+    .left{
+        flex-direction: row;
+    }
+}
+
 
 

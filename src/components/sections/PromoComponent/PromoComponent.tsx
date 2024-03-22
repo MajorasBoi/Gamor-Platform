@@ -11,7 +11,7 @@ export const PromoComponent = () => {
                 : <img className="promo_pic" src={promoStreamer.game_picture} alt="Image about the streaming" />
             }
             <div className='header-section'>
-                {promoStreamer === undefined ? <h2><span style={{ fontSize: '2rem', color: 'red' }}>Dota 2</span> International</h2> : <h2>{promoStreamer.game}</h2>}
+                {promoStreamer === undefined ? <h2><span>Dota 2</span> International</h2> : <h2>{promoStreamer.game}</h2>}
                 <p>{promoStreamer === undefined ? 'Join on April' : promoStreamer.username}</p>
                 {
                     promoStreamer !== undefined && <div className='join-button'>

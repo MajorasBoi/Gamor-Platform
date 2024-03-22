@@ -4,6 +4,10 @@
     justify-content: left;
 }
 
+.headers-container h1 {
+    font-size: 3.9vw;
+}
+
 .emphasized {
     color: #66fcf1;
 
@@ -15,6 +19,10 @@
 .mod1-container{
     display: flex;
     flex-direction: column;
+
+    p, span {
+        font-size: 1.5vw; 
+    }
 }
 
 .mod1-container div {
@@ -25,4 +33,12 @@
 
 .mod1-container span {
     color: #66fcf1;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 850px){
+    .mod1-container {
+        align-items: center;
+    }
 }
