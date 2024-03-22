@@ -1,5 +1,3 @@
-import { type MouseEventHandler } from 'react'
-
 export const PlayIcon = () => {
     return (
         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="">
@@ -24,7 +22,7 @@ export const HamburgerIcon = () => {
     const handleClick = (e) => {
         const links = document.querySelector('.nav-links')
         links?.classList.toggle('show')
-        e.target.classList.toggle('active')
+        e.target.classList.toggle('active-hamb')
         console.log(e.target)
     }
 

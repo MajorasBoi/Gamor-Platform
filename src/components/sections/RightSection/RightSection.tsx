@@ -27,7 +27,7 @@ export const RightSection = () => {
 
     return (
         <div className='container right'>
-            <label htmlFor="selector">
+            <label className='selector' htmlFor="selector">
                 <h4>Choose a platform</h4>
                 <CustomSelect onChange={handleSelectorChange} selectedPlatform={selectedPlatform} />
             </label>

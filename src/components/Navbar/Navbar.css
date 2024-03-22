@@ -83,13 +83,14 @@ nav{
 
   .hamb-icon {
     height: 6vw;
+    width: auto;
     display: block;
     right: 30px;
     top: 7px;
     cursor: pointer;
   }
 
-  .active {
+  .active-hamb {
     transform: rotate(90deg);
   }
 

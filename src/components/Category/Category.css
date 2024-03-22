@@ -55,3 +55,25 @@
         stroke: #c5c6c7;
     }
 }
+
+/* Mobile */
+
+@media screen and (max-width: 850px){
+    .category-box {
+        min-width: 20.7vw;
+        padding: 1.3vw 2.5vw;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            p {
+                font-size: 2.5vw;
+            }
+
+            svg {
+                width: 3vw;
+                height: 3vw;
+            }
+        }
+    }
+}

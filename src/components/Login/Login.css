@@ -82,15 +82,24 @@
     body.dark & {
       border-color: #1f2833;
     }
-  }
+}
   
-  .login-button:hover {
+.login-button:hover {
     background-color: #66fcf1;
     color: #0b0c10;
-  
-    body.dark & {
-      background-color: #1f2833;
-      color: #66fcf1;
-    }
-  }
 
+    body.dark & {
+        background-color: #1f2833;
+        color: #66fcf1;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 450px) {
+    .login-header{
+        h1, span {
+            font-size: 10vw;
+        }
+    }
+}

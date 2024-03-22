@@ -3,3 +3,13 @@
     max-width: 35%;
     border-radius: 0 0 20px 20px;
 }
+
+/* Mobile */
+
+@media screen and (max-width: 450px) {
+    .login-container {
+        min-width: unset;
+        max-width: unset;
+        width: 90%;
+    }
+}

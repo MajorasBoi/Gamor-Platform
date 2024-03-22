@@ -29,3 +29,15 @@
         display: block;
     }
 }
+
+/* Mobile */
+
+@media screen and (max-width: 850px) {
+    .footer {
+        padding: 1vw 2vw;
+    }
+    
+    .footer p {
+        font-size: 2vw;
+    }
+}

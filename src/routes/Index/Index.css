@@ -76,6 +76,10 @@ a{
 /* Mobile */
 
 @media screen and (max-width: 850px){
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
   .main-container {
     min-width: 70%;
     max-width: 70%;

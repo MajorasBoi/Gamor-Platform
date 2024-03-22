@@ -12,12 +12,16 @@
     justify-content: flex-start;
     align-items: center;
     gap: 7%;
+
+    * {
+        font-size: 1.5vw;
+    }
 }
 
 .index_indicator, .add_button{
-    width: 30px;
-    min-width: 30px;
-    height: 30px;
+    width: 2vw;
+    min-width: 2vw;
+    height: 2vw;
     background-color: #1f2833;
     border-radius: 1000px;
     display: flex;
@@ -51,4 +55,23 @@
     }
 }
 
+/* Mobile */
+
+@media screen and (max-width: 850px){
+    .index_indicator, .add_button {
+        min-width: unset;
+        width: 4vw;
+        height: 4vw;
+        font-size: 2.4vw;
+    }
+
+    .streamer_info p {
+        font-size: 2.5vw;
+    }
+    
+    .avatar {
+        width: 4vw;
+        height: 4vw; 
+    }
+}
 
