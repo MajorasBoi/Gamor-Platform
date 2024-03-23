@@ -12,7 +12,7 @@
   background-color: #66fcf1;
   color: #0b0c10;
 
-  body.dark & {
+  body.light & {
     background-color: #1f2833;
     color: #45a29e;
   }
@@ -21,7 +21,7 @@
 .highlighted button{
   border: 1px solid #66fcf1;
 
-  body.dark & {
+  body.light & {
     border-color: #1f2833;
   }
 }

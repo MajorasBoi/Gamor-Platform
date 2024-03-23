@@ -1,6 +1,6 @@
 import { AuthenticationLayout } from '../../layouts/AuthenticationLayout'
 
-export function Login() {
+export default function Login() {
     return (
         <AuthenticationLayout />
     )

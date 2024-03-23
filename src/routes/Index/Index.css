@@ -24,7 +24,7 @@ body{
   background: linear-gradient(#0b0c10, #1f2833);
   transition:  0.3s ease all;
 
-  &.dark {
+  &.light {
     background: linear-gradient(#45a29e, #c5c6c7);
   }
 }
@@ -35,7 +35,7 @@ body * {
   color: #66fcf1;
   transition:  0.3s ease all;
 
-  body.dark & {
+  body.light & {
     color: #1f2833;
   }
 }
@@ -63,7 +63,7 @@ a{
   color: #c5c6c7;
   transition:  0.3s ease all;
 
-  body.dark & {
+  body.light & {
       background-color: #c5c6c7;
       color: #1f2833;
   }

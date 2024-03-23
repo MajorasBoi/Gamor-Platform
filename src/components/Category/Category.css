@@ -7,7 +7,7 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
 
-    body.dark & {
+    body.light & {
         background-color: #45a29e;
     }
 }
@@ -22,7 +22,7 @@
         color: #1f2833;
     }
 
-    body.dark & {
+    body.light & {
         background-color: #1f2833;
         p {
             color: #c5c6c7;
@@ -43,7 +43,7 @@
 #SVG-play path{
     stroke: #c5c6c7;
 
-    body.dark & {
+    body.light & {
         stroke: #1f2833;
     }
 }
@@ -51,7 +51,7 @@
 #SVG-pause path{
     stroke: #1f2833;
 
-    body.dark & {
+    body.light & {
         stroke: #c5c6c7;
     }
 }

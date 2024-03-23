@@ -7,7 +7,7 @@ select{
     margin: 5px;
     cursor: pointer;
 
-    body.dark & {
+    body.light & {
         background-color: #45a29e;
     }
 }

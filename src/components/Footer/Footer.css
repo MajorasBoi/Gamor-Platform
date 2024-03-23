@@ -19,7 +19,7 @@
 .footer p {
     color: #c5c6c7;
 
-    body.dark & {
+    body.light & {
         color: #c5c6c7;
     }
 }

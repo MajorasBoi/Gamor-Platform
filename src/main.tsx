@@ -6,7 +6,7 @@ import {
   createRoutesFromElements
 } from 'react-router-dom'
 import Index from './routes/Index/Index'
-import { Login } from './routes/Login/Login'
+import Login from './routes/Login/Login'
 import Register from './routes/Register/Register'
 
 const router = createBrowserRouter(

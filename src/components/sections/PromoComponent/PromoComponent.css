@@ -24,7 +24,7 @@
     transition: all 0.3s ease 0s;
     * {
         color: #c5c6c7;
-        body.dark & {
+        body.light & {
             color: #c5c6c7; 
         }
     }
@@ -41,7 +41,7 @@
         font-size: 3vw;
         color: red;
 
-        body.dark & {
+        body.light & {
             color: red; 
         }
     }
@@ -55,7 +55,7 @@
     border-radius: 50px;
     margin-bottom: 2px;
 
-    body.dark & {
+    body.light & {
         color: #1f2833;
     }
 }

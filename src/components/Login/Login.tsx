@@ -15,13 +15,13 @@ export const Login = () => {
                         <div className='input-container'>
                             <label htmlFor="username">
                                 Username
-                                <input name="username" type="text" />
+                                <input id="username" name="username" type="text" />
                             </label>
                         </div>
                         <div className='input-container'>
                             <label htmlFor="password">
                                 Password
-                                <input name="password" type="password" />
+                                <input id="password" name="password" type="password" />
                             </label>
                             <a href="#">Trouble logging in?</a>
                         </div>

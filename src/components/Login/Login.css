@@ -56,7 +56,7 @@
     border-radius: 5px;
     height: 0.75cm;
     
-    body.dark & {
+    body.light & {
         color: #c5c6c7;
     }
 }
@@ -79,7 +79,7 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
   
-    body.dark & {
+    body.light & {
       border-color: #1f2833;
     }
 }
@@ -88,7 +88,7 @@
     background-color: #66fcf1;
     color: #0b0c10;
 
-    body.dark & {
+    body.light & {
         background-color: #1f2833;
         color: #66fcf1;
     }
