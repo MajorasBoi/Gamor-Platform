@@ -17,7 +17,9 @@ export const Navbar = () => {
             </nav>
             <div className='title-hamb'>
                 <a href="/" className="navbar-title">⚛Gamor</a>
-                <HamburgerIcon />
+                <div className='hambi-cont'>
+                    <HamburgerIcon />
+                </div>
             </div>
             {currentUser !== null
                 ? <h2 className='navbar-right'>{currentUser}</h2>
