@@ -19,7 +19,7 @@ export const PauseIcon = () => {
 }
 
 export const HamburgerIcon = () => {
-    const handleClick = (e) => {
+    const handleClick = (e: any) => {
         const links = document.querySelector('.nav-links')
         links?.classList.toggle('show')
         e.target.classList.toggle('active-hamb')

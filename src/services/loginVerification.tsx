@@ -7,7 +7,7 @@ export const loginVerification = () => {
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
-    async function loginAction(e) {
+    async function loginAction(e: any) {
         e.preventDefault()
 
         if (e.target.username.value === '') {
