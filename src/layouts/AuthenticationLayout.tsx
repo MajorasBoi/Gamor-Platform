@@ -9,6 +9,10 @@ export const AuthenticationLayout = () => {
             <MainLayout className={'login-container'}>
                 <Login />
             </MainLayout>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <p>Test username: Admin</p>
+                <p>Password: asd</p>
+            </div>
             <Footer />
         </div>
     )
